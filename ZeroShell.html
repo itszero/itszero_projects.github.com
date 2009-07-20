@@ -1,0 +1,31 @@
+<p><span class="app_title">ZRSh, ZeroShell</span><br/>一個簡單的 UNIX Shell 實作，學習 Shell 概念的好幫手。</p>
+
+<h2 id="intro">簡介</h2>
+ZeroShell 是我為了繳交大學的作業系統課程作業所製作的一個 Shell 版本。這個 Shell 我並沒有意願將他發展成一個全功能的 Shell 用以取代別的 Shell 程式。即便如此，我在 ZRSh 中仍然盡力做出了大部分 Shell 常見的功能。之所以這樣做的目的是希望我為了寫出這個作業所花的時間、所走的冤枉路能夠被轉化為更有用的學習資源，幫助更多人熟悉寫程式這件事情。
+
+<h2 id="features">目前功能</h2>
+<ul>
+	<li>顯示提示字串 ([User@Host] path>)</li>
+	<li>可以執行內部指令以及外部程式</li>
+	<li>使用 history 指令查看輸入指令的歷史紀錄</li>
+	<li>可以使用 Ctrl + C 或是 exit / quit 指令離開 Shell</li>
+	<li>可以在指令後加上 &amp; 符號讓程式背景執行</li>
+	<li>會依序在目前目錄、MYPATH、PATH 環境變數中搜尋指令</li>
+	<li>使用 setenv / listenv 操作環境變數設定</li>
+	<li>使用方向鍵瀏覽/修改歷史紀錄</li>
+	<li>輸入 help 可查看簡單的說明</li>
+	<li>程式執行中按 Ctrl + C 不會讓 Shell 一起被關閉</li>
+	<li>使用 TAB 按鍵自動完成</li>
+	<li>如果終端機支援彩色，會使用彩色輸出訊息</li>
+</ul>
+
+<h2 id="screenshots">實際畫面</h2>
+<div class="gallery">
+	<div class="clear"></div>
+</div>
+
+<h2 id="dependencies">函式庫相依性</h2>
+<p>ZRSh 需要使用 libreadline，請先確認你的系統已經有安裝。</p>
+
+<h2 id="compatibility">相容性</h2>
+<p>目前確認 ZRSh 可在 Linux(ArchLinux), Mac OSX 上正常執行，理論上只要是支援 POSIX 標準的作業系統都可以編譯執行才是。</p>
